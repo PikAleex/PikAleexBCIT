@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Lab1 Hard-Coded-Quiz</title>
+        <meta charset="utf-8"> 
+        <link rel="stylesheet" href="./style.css" />
+        <link rel="stylesheet" href="../../../../styles/bootstrap.min.css" />
+    </head>
+    <body>
+        <h1 style="text-align: center">Lab1: Hard-Coded-Quiz</h1>
+        <div id="content">
+            <p>1) What is the JavaScript code to inject a &lt;h1&gt; element that says "Hello World!" into the &lt;body&gt; element?</p>
+            <input type="radio" name="q1" value="a"> a) <span style="color:darkorchid;">document</span>.body = "&lt;h1&gt;Hello World!&lt;/h1&gt;"; <br>
+            <input type="radio" name="q1" value="b"> b) <span style="color:darkorchid;">document</span>.body.HTML = "&lt;h1&gt;Hello World!&lt;/h1&gt;"; <br>
+            <input type="radio" name="q1" value="c"> c) <span style="color:darkorchid;">document</span>.body.innerHTML = "&lt;h1&gt;Hello World!&lt;/h1&gt;"; <br>
+            <input type="radio" name="q1" value="d"> d) <span style="color:darkorchid;">document</span>.body.innerhtml = "&lt;h1&gt;Hello World!&lt;/h1&gt;"; <br>
+
+            <p>2) What will be displayed in the console from this code snippet?</p>
+            <div>
+                <div>&nbsp;<span style="color:red;">var</span> a = 5;</div>
+                <div>&nbsp;<span style="color:red;">var</span> b = 6;</div>
+                <div>&nbsp;<span style="color:red;">var</span> c = 11;</div>
+                <div>&nbsp;<span style="color:red;">var</span> d = "9";</div>
+                <div>&nbsp;<span style="color:cornflowerblue;">console</span>.log((a + b)/c + d);</div>
+            </div>
+            <br>
+            <input type="radio" name="q2" value="a"> a) 10 <br>
+            <input type="radio" name="q2" value="b"> b) 19 <br>
+            <input type="radio" name="q2" value="c"> c) NaN <br>
+            <input type="radio" name="q2" value="d"> d) 56119 <br>
+
+            <p>3) What method duplicates the array, arr, to the variable named newArr?</p>
+            <input type="radio" name="q3" value="a"> a) <span style="color:red;">var</span> newArr = arr.slice(); <br>
+            <input type="radio" name="q3" value="b"> b) <span style="color:red;">var</span> newArr = arr.copy() <br>
+            <input type="radio" name="q3" value="c"> c) <span style="color:red;">var</span> newArr = copy(arr); <br>
+            <input type="radio" name="q3" value="d"> d) <span style="color:red;">var</span> newArr = newArr.slice(); <br>
+
+            <p>4) An object is named student. The object has a name, an id, and program. How is this object defined?</p>
+            <input type="radio" name="q4" value="a"> a) <span style="color:red;">var</span> student = { 
+            <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;name = "John Doe",</div>
+            <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;id = 12345678,</div>
+            <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;program = "CST",</div>
+            <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</div> <br>
+            <input type="radio" name="q4" value="b"> b) <span style="color:red;">var</span> student = { 
+            <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;name: "John Doe",</div>
+            <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;id: 12345678,</div>
+            <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;program: "CST",</div>
+            <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</div> <br>
+            <input type="radio" name="q4" value="c"> c) <span style="color:red;">var</span> student = { 
+            <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;name: "John Doe";</div>
+            <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;id: 12345678;</div>
+            <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;program: "CST";</div>
+            <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</div>
+
+            <p>5) What is the resulting array of this script?</p>
+            <div><span style="color:red;">var</span> hiWorld = (function() {</div>
+            <div>&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:red;">var</span> result = 1;</div>
+            <div>&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:cadetblue;">for</span> (<span style="color:chocolate;">let</span> i = 2; i &lt; 5; ++i) {</div>
+            <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;result *= i;</div>
+            <div>&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:red;">var</span> greeting;</div>
+            <div>&nbsp;&nbsp;&nbsp;&nbsp;result &lt; 25 ? greeting = "Hi world!" : greeting = "Hello world!";</div>
+            <div>&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:red;">var</span> answer = [greeting, result];</div>
+            <div>&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:darkgreen;">return</span> answer;</div>
+            <div>})()</div> <br>
+            <input type="radio" name="q5" value="a"> a) ["Hi world!", 24] <br>
+            <input type="radio" name="q5" value="b"> b) ["Hi world!", 23] <br>
+            <input type="radio" name="q5" value="c"> c) ["Hello world!", 25] <br>
+            <input type="radio" name="q5" value="d"> d) ["Hello world!", 26] <br> <br>
+            <a href="../../../COMP4711.html"><button class="btn btn-danger">Back</button></a>
+        </div>
+    </body>
+</html>

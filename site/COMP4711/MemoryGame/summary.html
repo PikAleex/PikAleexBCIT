@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Summary</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="../../styles/bootstrap.min.css" />
+        <link rel="stylesheet" href="./styles/styles.css" />
+        <script src="https://www.gstatic.com/firebasejs/5.8.4/firebase.js"></script>
+        <script>
+          // Initialize Firebase
+          let config = {
+            apiKey: "AIzaSyBfFdLnmtAJ672kbOwx6MuNDQLNmGBrWZI",
+            authDomain: "memorygame-d9127.firebaseapp.com",
+            databaseURL: "https://memorygame-d9127.firebaseio.com",
+            projectId: "memorygame-d9127",
+            storageBucket: "memorygame-d9127.appspot.com",
+            messagingSenderId: "351870469215"
+          };
+          firebase.initializeApp(config);
+        </script>
+        <script type="text/javascript" src="./scripts/strings.js" defer></script>
+        <script type="text/javascript" src="./scripts/summary-js.js" defer></script>
+    </head>
+    <body>
+        <h1>Summary</h1>
+        <div id="summary_box"></div>
+        <div id="ctrl_btns">
+          <!-- <a href="./Leaderboard.html"><button class="btn btn-success">Submit score</button></a> -->
+        </div>
+    </body>  
+</html>

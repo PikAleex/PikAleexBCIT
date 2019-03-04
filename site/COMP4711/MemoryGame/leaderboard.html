@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Leaderboard</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="../../styles/bootstrap.min.css" />
+        <link rel="stylesheet" href="./styles/styles.css" />
+        <script src="https://www.gstatic.com/firebasejs/5.8.4/firebase.js"></script>
+        <script>
+          // Initialize Firebase
+          let config = {
+            apiKey: "AIzaSyBfFdLnmtAJ672kbOwx6MuNDQLNmGBrWZI",
+            authDomain: "memorygame-d9127.firebaseapp.com",
+            databaseURL: "https://memorygame-d9127.firebaseio.com",
+            projectId: "memorygame-d9127",
+            storageBucket: "memorygame-d9127.appspot.com",
+            messagingSenderId: "351870469215"
+          };
+          firebase.initializeApp(config);
+        </script>
+        <script type="text/javascript" src="./scripts/strings.js" defer></script>
+        <script type="text/javascript" src="./scripts/leaderboard-js.js" defer></script>
+    </head>
+    <body>
+        <h1>Leaderboard</h1>
+        <div id="leaderboard_box"></div>
+        <div id="ctrl_btns">
+            <a href="../COMP4711.html"><button class="btn btn-warning">Back</button></a>
+          </div>
+    </body>  
+</html>

@@ -1,0 +1,64 @@
+body {
+    font-family:Arial;
+    margin:50px;
+}
+
+button {
+    margin:5px;
+}
+
+h1 {
+    text-align: center;
+}
+
+p {
+    font-weight:bold;
+}
+
+#questions {
+    margin:50px;
+}
+
+.var_span {
+    color:red;
+}
+
+.doc_span {
+    color:darkorchid;
+}
+
+.console_span {
+    color:cornflowerblue;
+}
+
+.for_span {
+    color:cadetblue;
+}
+
+.let_span {
+    color:chocolate;
+}
+
+.return_span {
+    color:darkgreen;
+}
+
+#use_strict_s {
+    color:crimson;
+}
+
+.this_class {
+    color:darkblue;
+}
+
+.html_tags {
+    color:coral;
+}
+
+.attr_class {
+    color:darkmagenta;
+}
+
+.break_span {
+    color:deeppink;
+}

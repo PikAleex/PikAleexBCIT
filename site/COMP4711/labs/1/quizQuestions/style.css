@@ -1,0 +1,11 @@
+body {
+    font-family:Arial;
+}
+
+p {
+    font-weight:bold;
+}
+
+#content {
+    margin:50px;
+}

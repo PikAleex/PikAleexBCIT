@@ -1,0 +1,43 @@
+body {
+    font-family:Arial;
+    background-image:url(../images/background.png)
+}
+
+#name_banner {
+    width:600px;
+    margin:auto;
+    display:block;
+}
+
+#self_picture {
+    width:300px;
+    margin:auto;
+    display:block;
+    background-color:#93D5FF;
+    padding: 2em 2em 2em 2em;
+    border: 10px solid #CBE9FD;
+}
+
+#container {
+    width: 80%;
+	background-color: #F08080;
+	border-radius: 1em;
+	padding: 2em 2em 4em 4em;
+	margin-left: 1em;
+	margin-right: 1em;
+	margin-bottom: 2em;
+	margin-top: 1em;
+	margin: auto;
+	color: #000;
+	border: 2px solid red;
+	overflow: auto;
+}
+
+#comp4711_container {
+    margin:10%;
+}
+
+#comp4711_title, p {
+    font-weight:bold;
+}
+
