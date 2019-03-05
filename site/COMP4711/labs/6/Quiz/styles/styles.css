@@ -1,0 +1,29 @@
+body {
+    font-family:Arial;
+    margin:50px;
+}
+
+button {
+    margin:5px;
+}
+
+h1 {
+    text-align: center;
+}
+
+h4 {
+    display:inline-block;
+    margin: 5px;
+}
+
+[class^="txtbx"] {
+    margin:5px;
+}
+
+[id*="ua"] {
+    width: 100%;
+}
+
+p {
+    font-weight: bold;
+}
