@@ -15,8 +15,8 @@ app.get("/site/comp4711/6/Quiz", (req, res) => {
 	let con = mysql.createConnection({
         host: "localhost",
          user: "root",
-         password:"PikAleex619!"/*,
-         database:"mydb"*/
+         password:"PikAleex619!",
+         database:"mydb"
 	});
 	
 	con.connect(function(err){
