@@ -40,25 +40,25 @@ app.get("/site/comp4711/6/Quiz", (req, res) => {
              console.log("Table created");
          });
      
-         let insertQ = "INSERT INTO questions (q, ansa, ansb, ansc, ansd) VALUES ?";
-         let values = [];
-         for (let i = 0; i < 5; ++i) {
-             let tmp = [];
-             tmp.push(quiz.qlist[i].question);
-             for (let j = 0; j < quiz.qlist[i].answers.length; ++j) {
-                 tmp.push(quiz.qlist[i].answers[j]);
-             }
-             if (quiz.qlist[i].answers.length < 4) {
-                 for (let k = 0; k < (4 - quiz.qlist[i].answers.length); ++k)
-                     tmp.push(null);
-             }
-             values.push(tmp);
-         }
+        //  let insertQ = "INSERT INTO questions (q, ansa, ansb, ansc, ansd) VALUES ?";
+        //  let values = [];
+        //  for (let i = 0; i < 5; ++i) {
+        //      let tmp = [];
+        //      tmp.push(quiz.qlist[i].question);
+        //      for (let j = 0; j < quiz.qlist[i].answers.length; ++j) {
+        //          tmp.push(quiz.qlist[i].answers[j]);
+        //      }
+        //      if (quiz.qlist[i].answers.length < 4) {
+        //          for (let k = 0; k < (4 - quiz.qlist[i].answers.length); ++k)
+        //              tmp.push(null);
+        //      }
+        //      values.push(tmp);
+        //  }
      
-         con.query(insertQ, [values], function(err, result) {
-             if (err) throw err;
-             console.log("Number of records inserted: " + result.affectedRows);
-         });
+        //  con.query(insertQ, [values], function(err, result) {
+        //      if (err) throw err;
+        //      console.log("Number of records inserted: " + result.affectedRows);
+        //  });
      });
 });
 
