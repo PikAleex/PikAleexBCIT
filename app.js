@@ -12,6 +12,7 @@ app.get("/", (req, res) => {
 });
 
 app.get("/site/comp4711/6/Quiz", (req, res) => {
+	console.log("Connected!");
 	let con = mysql.createConnection({
         host: "localhost",
          user: "root",
