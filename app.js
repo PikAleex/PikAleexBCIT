@@ -11,8 +11,7 @@ app.get("/", (req, res) => {
 	res.sendFile(path.join(__dirname, "site", "index.html"));	
 });
 
-app.get("/site/comp4711/6/Quiz", (req, res) => {
-	console.log("Connected!");
+app.get("/COMP4711/labs/6/Quiz/", (req, res) => {
 	let con = mysql.createConnection({
         host: "localhost",
          user: "root",
