@@ -11,10 +11,30 @@ function Question(question, answers, correct_ans) {
 
 function get_questions() {
     let obj;
-    for (let i = 0; i < localStorage.length; ++i) {
-       obj = JSON.parse(localStorage.getItem("question" + (i + 1)));
-        q_list.push(new Question(obj.question, obj.answers, obj.correct_ans));
-    }
+
+    let xhttp = new XMLHttpRequest();
+
+    xhttp.open("GET", `/lab6/retrieve`, true);
+    xhttp.send();
+  
+    xhttp.onreadystatechange = function() {
+      if (this.readyState == 4 && this.status == 200) {
+        q_list = JSON.parse(this.response); // return array of questions
+
+        if (q_list == false) { // if array list is empty
+            document.getElementById("the_questions").innerHTML = NOQUESTIONS;
+        } else {
+            display_questions();
+            set_submit_btn();
+        }
+
+      }
+    };
+
+    // for (let i = 0; i < localStorage.length; ++i) {
+    //    obj = JSON.parse(localStorage.getItem("question" + (i + 1)));
+    //     q_list.push(new Question(obj.question, obj.answers, obj.correct_ans));
+    // }
 }
 
 function display_questions() {
@@ -24,9 +44,8 @@ function display_questions() {
     let q_q;
     let q_text;
     
-    get_questions();
     
-    for (let i = 0; i < localStorage.length; ++i) {
+    for (let i = 0; i < q_list.length; ++i) {
         div_id = "udiv" + div_counter; // Each question gets one unique id
         
         div_q = document.createElement("DIV");
@@ -231,12 +250,6 @@ function set_submit_btn() {
 (function retrieveQuiz() {
     user_score = 0;
     marking_list = [];
-    
-    if (localStorage.length == 0) {
-        document.getElementById("the_questions").innerHTML = NOQUESTIONS;
-    } else {
-        q_list = [];
-        display_questions();
-        set_submit_btn();
-    }
+    q_list = [];
+    get_questions();
 })();

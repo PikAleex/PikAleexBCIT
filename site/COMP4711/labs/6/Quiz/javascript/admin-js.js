@@ -155,10 +155,23 @@ function check_empty() {
     return false;
 }
 
+// needs fixing for database
 function storeQuiz() {
-    for (let i = 1; i < q_class_value; ++i) {
-        localStorage.setItem("question" + i, JSON.stringify(question_list[i - 1]));
-    }
+    let xhttp = new XMLHttpRequest();
+
+    xhttp.open("GET", `/lab6/submit?questions=${JSON.stringify(question_list)}`, true);
+    xhttp.send();
+    xhttp.onreadystatechange = function () {
+        if (this.readyState == 4 && this.status == 200) {
+            document.getElementById("demo").innerHTML =
+                this.responseText;
+        }
+    };
+
+    // for (let i = 1; i < q_class_value; ++i) {
+    //     //localStorage.setItem("question" + i, JSON.stringify(question_list[i - 1]));
+        
+    // }
 }
 
 // Gets any inputs in the textfields, and loads them in to the question_list as Question objects
