@@ -13,7 +13,7 @@ const port = 1337;
 //app.use(express.static('quiz'));
 
 app.get("/", (req, res) => {
-    res.sendFile(path.join(__dirname, "/quiz/index.html"));
+    res.sendFile(path.join(__dirname, "/index.html"));
 });
 
 app.get("/quiz", (req, res) => {
